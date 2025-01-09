@@ -8,7 +8,7 @@ from scipy.stats import ttest_ind
 
 
 df = pd.read_csv("heart_attack_youth_vs_adult.csv")
-"""
+
 ### 1. Plot for Sleep Hours ###
 # Group by Sleep Hours and Age Group
 sleep_hours_agg = df.groupby(['Sleep_Hours', 'Age_Group'])['Heart_Attack'].agg(['count', 'sum', 'mean']).reset_index()
@@ -79,7 +79,7 @@ plt.xticks(rotation=45, fontsize=10)
 plt.legend(title='Age Group', fontsize=10)
 plt.show()
 
-"""
+
 #Chi Square Test For Categorical Variables
 contingency_table = pd.crosstab(df['Age_Group'], df['Smoking_Status'])
 chi2, p, dof, expected = chi2_contingency(contingency_table)
