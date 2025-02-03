@@ -14,4 +14,3 @@ This project analyzes **heart attack risk factors** using a dataset of **500,000
 ✔ **Predictive Modeling**: Logistic regression for heart attack risk classification  
 ✔ **Visualizations**: Heatmaps, correlation matrices, risk factor distributions  
 
-## 📂 Project Structure
